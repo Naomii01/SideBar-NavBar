@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SideBar Menu Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-toggle">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+      <label class="logo">Naomi</label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById("check").addEventListener("change", function() {
+          var cancelIcon = document.getElementById("cancel");
+          var menuIcon = document.getElementById("btn");
+          if (this.checked) {
+              cancelIcon.style.display = "block"; 
+              menuIcon.style.display = "none"; 
+          } else {
+              cancelIcon.style.display = "none"; 
+              menuIcon.style.display = "block"; 
+          }
+      });
+  </script>
+
+
+
+    </nav>
+</body>
+</html>
+
